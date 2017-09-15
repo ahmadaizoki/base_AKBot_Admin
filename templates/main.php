@@ -1,3 +1,16 @@
+<?php
+try{
+  $pdoString="pgsql:host=ec2-54-75-224-100.eu-west-1.compute.amazonaws.com dbname=deoaedt1t45duq user=ufmqwqytarffyx password=96a05ed81622bac458a19cff32a97e37fb2ae74bfb2a1e3f3b484fdf30735b82"
+  $con=pg_connect($pdoString);
+  if (!$con){
+    die ('Failed to cinnect: ' .mysqli_connect_error());
+  }
+  $sql='SELECT * FROM offre';
+  $query=pg_query($con,$sql);
+  if (!$query){
+    die ('SQL ERROR: '.mysqli_error($con));
+  }
+ ?>
 <html>
 <title>
   Base Admin
@@ -56,5 +69,41 @@
     <br>
     <input type="submit">
   </form>
+  <h1> Table 1 </h1>
+  <table>
+    <caption> La table offre</caption>
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>nbdays</th>
+        <th>nbmax</th>
+        <th>nbmin</th>
+        <th>dayn</th>
+        <th>dayt</th>
+        <th>nom</th>
+        <th>rate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <?php
+      $no=1;
+      $total=0;
+      while ($row=mysqli_fetch_array($query)){
+        $id=$row['id']==0 ? '' :number_format($row['id']);
+        echo  '<tr>'
+        echo '$row['id']'
+        echo '</tr>'
+        $total += $row['id'];
+        $no++;
+      }
+       ?>
+     </tbody>
+     <tfoot>
+       <tr>
+         <th colspan="4">TOTAL </th>
+         <th><?=number_format($total)?></th>
+       </tr>
+     </tfoot>
+   </table>
 </body>
 </html>
