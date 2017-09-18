@@ -8,7 +8,7 @@
   <br>
 </header>
 <body>
-  <form method="post" action="/">
+  <form method="post" action="index.php">
     Nombre de jours:<br>
     <input type="text" name="nbdays">
     <br>
@@ -79,5 +79,27 @@
     }
     echo $display;
   ?>
+  <?php
+  $pdoString = "pgsql:host=ec2-54-75-224-100.eu-west-1.compute.amazonaws.com dbname=deoaedt1t45duq user=ufmqwqytarffyx password=96a05ed81622bac458a19cff32a97e37fb2ae74bfb2a1e3f3b484fdf30735b82";
+  $pdo = new PDO($pdoString);
+  if (!$pdo) {
+    die("Could not connect");
+  }
+  $nbdays=$_POST['nbdays'];
+  $nbmax=$_POST['nbmax'];
+  $nbmin=$_POST['nbmin'];
+  $dayn=$_POST['dayn'];
+  $dayt=$_POST['dayt'];
+  $nom=$POST['nom'];
+  $rate=$_POST['rate']
+  $offre=$_POST['offre'];
+  $query="UPDATE offre SET nbdays=$nbdays,nbmax=$nbmax,nbmin=$nbmin,dayn='$dayn',dayt='$dayt',nom='$nom',rate='$rate' WHERE id=$offre";
+  $result=pg_query($pdoString,$query);
+  if (!$result){
+    echo "Update failed!":
+  }else {
+    echo "Update successfull!";
+  }
+   ?>
 </body>
 </html>
