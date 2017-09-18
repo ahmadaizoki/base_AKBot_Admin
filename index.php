@@ -87,7 +87,7 @@
   $nbmin=$_POST['nbmin'];
   $dayn=$_POST['dayn'];
   $dayt=$_POST['dayt'];
-  $nom=$POST['nom'];
+  $nom=$_POST['nom'];
   $rate=$_POST['rate'];
   $offre=$_POST['offre'];
   $query="UPDATE offre SET nbdays=$nbdays,nbmax=$nbmax,nbmin=$nbmin,dayn='$dayn',dayt='$dayt',nom='$nom',rate='$rate' WHERE id=$offre";
