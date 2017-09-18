@@ -24,8 +24,7 @@ def main():
         print (nbdays,nbmax,nbmin,dayn,dayt,nom,rate,offre)
         return render_template('app.php')
     if request.method=='GET':
-        #return render_template('app.php')
-        return (call(["php","pp.php"]))
+        return render_template('app.php')
 
 def update(nbdays,nbmax,nbmin,dayn,dayt,nom,rate,offre):
     try:
