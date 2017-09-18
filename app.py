@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import psycopg2
+from subprocess import call
 from flask import Flask, request, render_template
 app = Flask(__name__)
 
@@ -23,7 +24,8 @@ def main():
         print (nbdays,nbmax,nbmin,dayn,dayt,nom,rate,offre)
         return render_template('app.php')
     if request.method=='GET':
-        return render_template('app.php')
+        #return render_template('app.php')
+        return (call(["php","pp.php"]))
 
 def update(nbdays,nbmax,nbmin,dayn,dayt,nom,rate,offre):
     try:
