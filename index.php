@@ -87,7 +87,7 @@
   $dayn=$_POST['dayn'];
   $dayt=$_POST['dayt'];
   $nom=$POST['nom'];
-  $rate=$_POST['rate']
+  $rate=$_POST['rate'];
   $offre=$_POST['offre'];
   $query="UPDATE offre SET nbdays=$nbdays,nbmax=$nbmax,nbmin=$nbmin,dayn='$dayn',dayt='$dayt',nom='$nom',rate='$rate' WHERE id=$offre";
   $result=pg_query($db,$query);
