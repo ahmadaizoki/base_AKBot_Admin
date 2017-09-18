@@ -66,14 +66,14 @@
     $statement = $pdo->query($sql);
     $display = "    <table border=\"1\">\n";
     $display .= "      <tr>\n";
-    $display .= "        <td>" 'ID' "</td>\n";
-    $display .= "        <td>" 'Nbdays' "</td>\n";
-    $display .= "        <td>" 'Nbmax' "</td>\n";
-    $display .= "        <td>" 'Nbmin' "</td>\n";
-    $display .= "        <td>" 'Dayn' "</td>\n";
-    $display .= "        <td>" 'Dayt' "</td>\n";
-    $display .= "        <td>" 'Nom' "</td>\n";
-    $display .= "        <td>" 'Rate' "</td>\n";
+    $display .= "        <td> ID </td>\n";
+    $display .= "        <td> Nbdays </td>\n";
+    $display .= "        <td> Nbmax </td>\n";
+    $display .= "        <td> Nbmin </td>\n";
+    $display .= "        <td> Dayn </td>\n";
+    $display .= "        <td> Dayt </td>\n";
+    $display .= "        <td> Nom </td>\n";
+    $display .= "        <td> Rate </td>\n";
     $display .= "      </tr>\n";
     while (($row = $statement->fetch(PDO::FETCH_ASSOC))) {
       $display .= "      <tr>\n";
