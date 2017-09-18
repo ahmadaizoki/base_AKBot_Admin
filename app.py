@@ -22,9 +22,9 @@ def main():
         offre=int(offre)
         update(nbdays,nbmax,nbmin,dayn,dayt,nom,rate,offre)
         print (nbdays,nbmax,nbmin,dayn,dayt,nom,rate,offre)
-        return render_template('app.php')
+        return render_template('index.php')
     if request.method=='GET':
-        return render_template('app.php')
+        return render_template('index.php')
 
 def update(nbdays,nbmax,nbmin,dayn,dayt,nom,rate,offre):
     try:
