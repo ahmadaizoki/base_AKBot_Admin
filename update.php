@@ -46,13 +46,6 @@
     Rate:<br>
     <input type="text" name="rate">
     <br>
-    Choisir une offre:<br>
-    <select name="offre">
-      <option value="1">Offre 1</option>
-      <option value="2">Offre 2</option>
-      <option value="3">Offre 3</option>
-    </select>
-    <br>
     <br>
     <input type="submit" name="update" value="Update">
   </form>
