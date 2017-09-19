@@ -3,9 +3,8 @@
   Base Admin
 </title>
 <header>
-  <h1><?php
-  echo $_POST["id"]; ?>
-  </h1>
+  <?php
+  "<h1>" . $_POST["id"] . "</h1>"; ?>
   <br>
   <br>
 </header>
