@@ -1,6 +1,7 @@
 <html>
 <title>
-  Base Admin
+  <?php
+  echo "$_POST["id"]"; ?>
 </title>
 <header>
   <h1>Base Admin</h1>
@@ -54,7 +55,7 @@
     </select>
     <br>
     <br>
-    <input type="submit" name="update">
+    <input type="submit" name="update" value="Update">
   </form>
   <form action="index.php">
     <input type="submit" name="annuler" value="Annuler">
