@@ -10,7 +10,7 @@
 <body>
   <form method="post">
     Nombre de jours:<br>
-    <input type="text" name="nbdays" value="<?php htmlspecialchars($_GET["nbdays"])?>">
+    <input type="text" name="nbdays" value="<?php echo htmlspecialchars($_GET["nbdays"])?>">
     <br>
     Nombre max de nuits:<br>
     <input type="text" name="nbmax">
