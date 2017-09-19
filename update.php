@@ -63,7 +63,7 @@
   $nom=$_POST['nom'];
   $rate=$_POST['rate'];
   $offre=$_POST['id'];
-  if ($offre==1){
+  if ($offre=="1"){
     echo "ouiiiiii";
   }else{
     echo "nonnnn";
