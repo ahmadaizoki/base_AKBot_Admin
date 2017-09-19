@@ -87,9 +87,14 @@
       $display .= "        <td>" . $row["rate"] . "</td>\n";
       if ($row["id"]==1){
         $qu="SELECT * FROM offre WHERE id=1";
-        $statement = $pdo->query($qu);
-        while (($row = $statement->fetch(PDO::FETCH_ASSOC))) {
-          $display .= "        <td> <a href=update.php?id=" . $row["id"] .">Edit</a> </td>\n";
+        $pdoStrings = "pgsql:host=ec2-54-75-224-100.eu-west-1.compute.amazonaws.com dbname=deoaedt1t45duq user=ufmqwqytarffyx password=96a05ed81622bac458a19cff32a97e37fb2ae74bfb2a1e3f3b484fdf30735b82";
+        $pdos = new PDO($pdoStrings);
+        if (!$pdos) {
+          die("Could not connect");
+        }
+        $statements = $pdos->query($qu);
+        while (($rows = $statements->fetch(PDO::FETCH_ASSOC))) {
+          $display .= "        <td> <a href=update.php?id=" . $rows["id"] .">Edit</a> </td>\n";
         }
         //$display .= "        <td> <a href=update.php?id=" . $result["id"] . "&nbdays=" . $result["nbdays"] . "&nbmax=" . $result["nbmax"] . "&nbmin=" . $result["nbmin"] . "&dayn=" . $result["dayn"] . "&dayt=" . $result["dayt"] . "&nom=" . $result["nom"] . "&rate=" . $result["rate"] . ">Edit</a> </td>\n";
       }else if ($row["id"]==2){
