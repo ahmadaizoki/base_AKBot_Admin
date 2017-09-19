@@ -57,7 +57,7 @@
     <input type="submit" name="update">
   </form>
   <form action="index.php">
-    <input type="submit" name="annuler" title="annuler">
+    <input type="submit" name="annuler" value="Annuler">
   </form>
 </body>
 </html>
