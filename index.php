@@ -86,12 +86,12 @@
       $display .= "        <td>" . $row["nom"] . "</td>\n";
       $display .= "        <td>" . $row["rate"] . "</td>\n";
       if ($row["id"]==1){
-        $qurey="SELECT * FROM offre WHERE id=1";
-        $db=pg_connect("host=ec2-54-75-224-100.eu-west-1.compute.amazonaws.com port=5432 dbname=deoaedt1t45duq user=ufmqwqytarffyx password=96a05ed81622bac458a19cff32a97e37fb2ae74bfb2a1e3f3b484fdf30735b82");
-        $result=pg_query($db,$query);
-        $result=pg_fetch_array($result);
+        $qu="SELECT * FROM offre WHERE id=1";
+        $dbc=pg_connect("host=ec2-54-75-224-100.eu-west-1.compute.amazonaws.com port=5432 dbname=deoaedt1t45duq user=ufmqwqytarffyx password=96a05ed81622bac458a19cff32a97e37fb2ae74bfb2a1e3f3b484fdf30735b82");
+        $results=pg_query($dbc,$qu);
+        $results=pg_fetch_array($results);
         //echo $result;
-        $display .= "        <td> <a href=update.php?" . $result .">Edit</a> </td>\n";
+        $display .= "        <td> <a href=update.php?" . $results .">Edit</a> </td>\n";
         //$display .= "        <td> <a href=update.php?id=" . $result["id"] . "&nbdays=" . $result["nbdays"] . "&nbmax=" . $result["nbmax"] . "&nbmin=" . $result["nbmin"] . "&dayn=" . $result["dayn"] . "&dayt=" . $result["dayt"] . "&nom=" . $result["nom"] . "&rate=" . $result["rate"] . ">Edit</a> </td>\n";
       }else if ($row["id"]==2){
         $display .= "        <td> <a href=update.php?id=2>Edit</a> </td>\n";
