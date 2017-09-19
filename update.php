@@ -62,7 +62,12 @@
   $dayt=$_POST['dayt'];
   $nom=$_POST['nom'];
   $rate=$_POST['rate'];
-  $offre=int($_POST['id']);
+  $offre=$_POST['id'];
+  if ($offre==1){
+    echo "ouiiiiii";
+  }else{
+    echo "nonnnn";
+  }
   $query="UPDATE offre SET nbdays=$nbdays,nbmax=$nbmax,nbmin=$nbmin,dayn='$dayn',dayt='$dayt',nom='$nom',rate='$rate' WHERE id=$offre";
   $result=pg_query($db,$query);
   if (!$result){
