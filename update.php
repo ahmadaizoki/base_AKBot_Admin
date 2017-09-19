@@ -8,7 +8,7 @@
   <br>
 </header>
 <body>
-  <form method="post"action="index.php">
+  <form method="post">
     Nombre de jours:<br>
     <input type="text" name="nbdays">
     <br>
