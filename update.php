@@ -3,7 +3,7 @@
   Base Admin
 </title>
 <header>
-  <h1> Base admin </h1>
+  <h1> <?php echo 'Offre' . htmlspecialchars($_GET["id"]) . "!"; ?> </h1>
   <br>
   <br>
 </header>
