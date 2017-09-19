@@ -62,8 +62,8 @@
   $dayt=$_POST['dayt'];
   $nom=$_POST['nom'];
   $rate=$_POST['rate'];
-  $offre=$_POST['id'];
-  if ($offre=="1"){
+  $offre=$id;
+  if ($offre==1){
     echo "ouiiiiii";
   }else{
     echo "nonnnn";
