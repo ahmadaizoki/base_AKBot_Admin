@@ -85,7 +85,7 @@
       $display .= "        <td>" . $row["dayt"] . "</td>\n";
       $display .= "        <td>" . $row["nom"] . "</td>\n";
       $display .= "        <td>" . $row["rate"] . "</td>\n";
-      $display .= "        <td> <a herf="index.php">Edit</a> </td>\n";
+      $display .= "        <td>" . <a herf="index.php">Edit</a> . "</td>\n";
       $display .= "      </tr>\n";
     }
     echo $display;
