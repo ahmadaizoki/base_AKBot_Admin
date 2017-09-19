@@ -13,38 +13,22 @@
     <input type="text" name="nbdays" value="<?php echo htmlspecialchars($_GET["nbdays"])?>">
     <br>
     Nombre max de nuits:<br>
-    <input type="text" name="nbmax">
+    <input type="text" name="nbmax" value="<?php echo htmlspecialchars($_GET["nbmax"])?>">
     <br>
     Nombre min de nuits:<br>
-    <input type="text" name="nbmin">
+    <input type="text" name="nbmin" value="<?php echo htmlspecialchars($_GET["nbmin"])?>">
     <br>
     Nom de jour d'arriver:<br>
-    <select name="dayn">
-      <option value="lundi">Lundi</option>
-      <option value="mardi">Mardi</option>
-      <option value="mercredi">Mercredi</option>
-      <option value="jeudi">Jeudi</option>
-      <option value="vendredi">Vendredi</option>
-      <option value="samedi">Samedi</option>
-      <option value="dimanche">Dimanche</option>
-    </select>
+    <input type="text" name="dayn" value="<?php echo htmlspecialchars($_GET["dayn"])?>">
     <br>
     Nom de jour de depart:<br>
-    <select name="dayt">
-      <option value="lundi">Lundi</option>
-      <option value="mardi">Mardi</option>
-      <option value="mercredi">Mercredi</option>
-      <option value="jeudi">Jeudi</option>
-      <option value="vendredi">Vendredi</option>
-      <option value="samedi">Samedi</option>
-      <option value="dimanche">Dimanche</option>
-    </select>
+    <input type="text" name="dayt" value="<?php echo htmlspecialchars($_GET["dayt"])?>">
     <br>
     Nom d'offre:<br>
     <input type="text" name="nom">
     <br>
     Rate:<br>
-    <input type="text" name="rate">
+    <input type="text" name="rate" value="<?php echo htmlspecialchars($_GET["rate"])?>">
     <br>
     <br>
     <input type="submit" name="update" value="Update">
