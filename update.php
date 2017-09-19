@@ -1,10 +1,11 @@
 <html>
 <title>
-  <?php
-  echo $_POST["id"]; ?>
+  Base Admin
 </title>
 <header>
-  <h1>Base Admin</h1>
+  <h1><?php
+  echo $_POST["id"]; ?>
+  </h1>
   <br>
   <br>
 </header>
