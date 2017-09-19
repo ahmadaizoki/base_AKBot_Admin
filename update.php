@@ -8,7 +8,7 @@
   <br>
 </header>
 <body>
-  <form method="post">
+  <form method="post"action="index.php">
     Nombre de jours:<br>
     <input type="text" name="nbdays">
     <br>
@@ -63,11 +63,6 @@
   $nom=$_POST['nom'];
   $rate=$_POST['rate'];
   $offre=htmlspecialchars($_GET["id"]);
-  if ($offre==1){
-    echo "ouiiiiii";
-  }else{
-    echo "nonnnn";
-  }
   $query="UPDATE offre SET nbdays=$nbdays,nbmax=$nbmax,nbmin=$nbmin,dayn='$dayn',dayt='$dayt',nom='$nom',rate='$rate' WHERE id=$offre";
   $result=pg_query($db,$query);
   if (!$result){
