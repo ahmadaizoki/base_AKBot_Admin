@@ -95,6 +95,7 @@
         $statements = $pdos->query($qu);
         while (($rows = $statements->fetch(PDO::FETCH_ASSOC))) {
           $display .= "        <td> <a href=update.php?id=" . $rows["id"] . "&nbdays=" . $rows["nbdays"] . "&nbmax=" . $rows["nbmax"] . "&nbmin=" . $rows["nbmin"] . "&dayn=" . $rows["dayn"] . "&dayt=" . $rows["dayt"] . "&nom=" . $rows["nom"] . "&rate=" . $rows["rate"] . ">Edit</a> </td>\n";
+        }
       }else if ($row["id"]==2){
         $display .= "        <td> <a href=update.php?id=2>Edit</a> </td>\n";
       }else if ($row["id"]==3){
