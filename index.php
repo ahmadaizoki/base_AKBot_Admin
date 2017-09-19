@@ -97,9 +97,27 @@
           $display .= "        <td> <a href=update.php?id=" . $rows["id"] . "&nbdays=" . $rows["nbdays"] . "&nbmax=" . $rows["nbmax"] . "&nbmin=" . $rows["nbmin"] . "&dayn=" . $rows["dayn"] . "&dayt=" . $rows["dayt"] . "&rate=" . $rows["rate"] . "&nom=" . $rows["nom"] . ">Edit</a> </td>\n";
         }
       }else if ($row["id"]==2){
-        $display .= "        <td> <a href=update.php?id=2>Edit</a> </td>\n";
+        $qu="SELECT * FROM offre WHERE id=2";
+        $pdoStrings = "pgsql:host=ec2-54-75-224-100.eu-west-1.compute.amazonaws.com dbname=deoaedt1t45duq user=ufmqwqytarffyx password=96a05ed81622bac458a19cff32a97e37fb2ae74bfb2a1e3f3b484fdf30735b82";
+        $pdos = new PDO($pdoStrings);
+        if (!$pdos) {
+          die("Could not connect");
+        }
+        $statements = $pdos->query($qu);
+        while (($rows = $statements->fetch(PDO::FETCH_ASSOC))) {
+          $display .= "        <td> <a href=update.php?id=" . $rows["id"] . "&nbdays=" . $rows["nbdays"] . "&nbmax=" . $rows["nbmax"] . "&nbmin=" . $rows["nbmin"] . "&dayn=" . $rows["dayn"] . "&dayt=" . $rows["dayt"] . "&rate=" . $rows["rate"] . "&nom=" . $rows["nom"] . ">Edit</a> </td>\n";
+        }
       }else if ($row["id"]==3){
-        $display .= "        <td> <a href=update.php?id=3>Edit</a> </td>\n";
+        $qu="SELECT * FROM offre WHERE id=3";
+        $pdoStrings = "pgsql:host=ec2-54-75-224-100.eu-west-1.compute.amazonaws.com dbname=deoaedt1t45duq user=ufmqwqytarffyx password=96a05ed81622bac458a19cff32a97e37fb2ae74bfb2a1e3f3b484fdf30735b82";
+        $pdos = new PDO($pdoStrings);
+        if (!$pdos) {
+          die("Could not connect");
+        }
+        $statements = $pdos->query($qu);
+        while (($rows = $statements->fetch(PDO::FETCH_ASSOC))) {
+          $display .= "        <td> <a href=update.php?id=" . $rows["id"] . "&nbdays=" . $rows["nbdays"] . "&nbmax=" . $rows["nbmax"] . "&nbmin=" . $rows["nbmin"] . "&dayn=" . $rows["dayn"] . "&dayt=" . $rows["dayt"] . "&rate=" . $rows["rate"] . "&nom=" . $rows["nom"] . ">Edit</a> </td>\n";
+        }
       }else{
         $display .= "        <td> <a href=update.php>Edit</a> </td>\n";
       }
