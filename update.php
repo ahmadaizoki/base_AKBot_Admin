@@ -4,7 +4,7 @@
 </title>
 <header>
   <?php
-  "<h1>" . $_POST["id"] . "</h1>"; ?>
+  "<h1> Offre " . $_POST["id"] . "</h1>"; ?>
   <br>
   <br>
 </header>
