@@ -1,7 +1,7 @@
 <html>
 <title>
   <?php
-  echo "$_POST["id"]"; ?>
+  echo $_POST["id"]; ?>
 </title>
 <header>
   <h1>Base Admin</h1>
