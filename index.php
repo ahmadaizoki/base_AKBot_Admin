@@ -86,13 +86,13 @@
       $display .= "        <td>" . $row["nom"] . "</td>\n";
       $display .= "        <td>" . $row["rate"] . "</td>\n";
       if ($row["id"]==1){
-        $display .= "        <td> <a href=index.php?id=1>Edit</a> </td>\n";
+        $display .= "        <td> <a href=update.php?id=1>Edit</a> </td>\n";
       }else if ($row["id"]==2){
-        $display .= "        <td> <a href=index.php?id=2>Edit</a> </td>\n";
+        $display .= "        <td> <a href=update.php?id=2>Edit</a> </td>\n";
       }else if ($row["id"]==3){
-        $display .= "        <td> <a href=index.php?id=3>Edit</a> </td>\n";
+        $display .= "        <td> <a href=update.php?id=3>Edit</a> </td>\n";
       }else{
-        $display .= "        <td> <a href=index.php>Edit</a> </td>\n";
+        $display .= "        <td> <a href=update.php>Edit</a> </td>\n";
       }
       $display .= "      </tr>\n";
     }
