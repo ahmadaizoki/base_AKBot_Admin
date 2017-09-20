@@ -19,10 +19,26 @@
     <input type="text" name="nbmin" value="<?php echo htmlspecialchars($_GET["nbmin"])?>">
     <br>
     Nom de jour d'arriver:<br>
-    <input type="text" name="dayn" value="<?php echo htmlspecialchars($_GET["dayn"])?>">
+    <select name="dayn">
+      <option value="lundi">Lundi</option>
+      <option value="mardi">Mardi</option>
+      <option value="mercredi">Mercredi</option>
+      <option value="jeudi">Jeudi</option>
+      <option value="vendredi">Vendredi</option>
+      <option value="samedi">Samedi</option>
+      <option value="dimanche">Dimanche</option>
+    </select>
     <br>
     Nom de jour de depart:<br>
-    <input type="text" name="dayt" value="<?php echo htmlspecialchars($_GET["dayt"])?>">
+    <select name="dayt">
+      <option value="lundi">Lundi</option>
+      <option value="mardi">Mardi</option>
+      <option value="mercredi">Mercredi</option>
+      <option value="jeudi">Jeudi</option>
+      <option value="vendredi">Vendredi</option>
+      <option value="samedi">Samedi</option>
+      <option value="dimanche">Dimanche</option>
+    </select>
     <br>
     Nom d'offre:<br>
     <input type="text" name="nom" value="<?php $id=htmlspecialchars($_GET["id"]);
