@@ -25,7 +25,18 @@
     <input type="text" name="dayt" value="<?php echo htmlspecialchars($_GET["dayt"])?>">
     <br>
     Nom d'offre:<br>
-    <input type="text" name="nom">
+    <input type="text" name="nom" value="<?php id=htmlspecialchars($_GET["id"]);
+    $pdoS = "pgsql:host=ec2-54-75-224-100.eu-west-1.compute.amazonaws.com dbname=deoaedt1t45duq user=ufmqwqytarffyx password=96a05ed81622bac458a19cff32a97e37fb2ae74bfb2a1e3f3b484fdf30735b82";
+    $pdoSS = new PDO($pdoS);
+    if (!$pdoSS) {
+      die("Could not connect");
+    }
+    $sqlS = "select nom from offre where id=id";
+    $state = $pdoSS->query($sqlS);
+    while (($rows = $statements->fetch(PDO::FETCH_ASSOC))) {
+      echo rows["nom"];
+    }
+    ?>">
     <br>
     Rate:<br>
     <input type="text" name="rate" value="<?php echo htmlspecialchars($_GET["rate"])?>">
