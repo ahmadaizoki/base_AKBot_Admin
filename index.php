@@ -94,7 +94,7 @@
         }
         $statements = $pdos->query($qu);
         while (($rows = $statements->fetch(PDO::FETCH_ASSOC))) {
-          $display .= "        <td> <a href=update.php?id=" . $rows["id"] . "&nbdays=" . $rows["nbdays"] . "&nbmax=" . $rows["nbmax"] . "&nbmin=" . $rows["nbmin"] . "&dayn=" . $rows["dayn"] . "&dayt=" . $rows["dayt"] . "&rate=" . $rows["rate"] . "&nom=" . $rows["nom"] . ">Edit</a> </td>\n";
+          $display .= "        <td> <a href=update.php?id=" . $rows["id"] . "&nbdays=" . $rows["nbdays"] . "&nbmax=" . $rows["nbmax"] . "&nbmin=" . $rows["nbmin"] . "&dayn=" . $rows["dayn"] . "&dayt=" . $rows["dayt"] . "&rate=" . $rows["rate"] . "&nom=" . '$rows["nom"]' . ">Edit</a> </td>\n";
         }
       }else if ($row["id"]==2){
         $qu="SELECT * FROM offre WHERE id=2";
