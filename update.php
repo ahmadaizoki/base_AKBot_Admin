@@ -20,12 +20,12 @@
     <br>
     Nom de jour d'arriver:<br>
     <select name="dayn">
-      <option selected="selected"><?php echo htmlspecialchars($_GET["dayn"]) ?></option>
       <option value="lundi">Lundi</option>
       <option value="mardi">Mardi</option>
       <option value="mercredi">Mercredi</option>
       <option value="jeudi">Jeudi</option>
       <option value="vendredi">Vendredi</option>
+      <option selected="selected"><?php echo htmlspecialchars($_GET["dayn"]) ?></option>
       <option value="samedi">Samedi</option>
       <option value="dimanche">Dimanche</option>
     </select>
