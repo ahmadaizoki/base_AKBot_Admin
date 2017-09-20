@@ -19,7 +19,8 @@
     <input type="text" name="nbmin" value="<?php echo htmlspecialchars($_GET["nbmin"])?>">
     <br>
     Nom de jour d'arriver:<br>
-    <select name="dayn" value="<?php echo htmlspecialchars($_GET["dayn"]) ?>">
+    <select name="dayn">
+      <option selected="selected"><?php echo htmlspecialchars($_GET["dayn"]) ?></option>
       <option value="lundi">Lundi</option>
       <option value="mardi">Mardi</option>
       <option value="mercredi">Mercredi</option>
