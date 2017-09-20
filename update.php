@@ -31,9 +31,9 @@
     if (!$pdoSS) {
       die("Could not connect");
     }
-    $sqlS = "select nom from offre where id=id";
+    $sqlS = "SELECT nom FROM offre WHERE id=$id";
     $state = $pdoSS->query($sqlS);
-    while (($rows = $statements->fetch(PDO::FETCH_ASSOC))) {
+    while (($rows = $state->fetch(PDO::FETCH_ASSOC))) {
       echo $rows["nom"];
     }
     ?>">
