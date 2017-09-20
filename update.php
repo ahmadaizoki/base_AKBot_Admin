@@ -20,7 +20,7 @@
     <br>
     Nom de jour d'arriver:<br>
     <select name="dayn">
-      <<option selected="selected"><?php echo htmlspecialchars($_GET["dayn"]) ?></option>
+      <option selected="selected"><?php echo htmlspecialchars($_GET["dayn"]) ?></option>
       <option value="lundi">Lundi</option>
       <option value="mardi">Mardi</option>
       <option value="mercredi">Mercredi</option>
@@ -32,6 +32,7 @@
     <br>
     Nom de jour de depart:<br>
     <select name="dayt">
+      <option selected="selected"><?php echo htmlspecialchars($_GET["dayt"]) ?></option>
       <option value="lundi">Lundi</option>
       <option value="mardi">Mardi</option>
       <option value="mercredi">Mercredi</option>
