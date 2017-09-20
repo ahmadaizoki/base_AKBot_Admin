@@ -31,14 +31,13 @@
     <br>
     Nom de jour de depart:<br>
     <select name="dayt">
-      <option selected="selected"><?php echo htmlspecialchars($_GET["dayt"]) ?></option>
-      <option value="lundi">Lundi</option>
-      <option value="mardi">Mardi</option>
-      <option value="mercredi">Mercredi</option>
-      <option value="jeudi">Jeudi</option>
-      <option value="vendredi">Vendredi</option>
-      <option value="samedi">Samedi</option>
-      <option value="dimanche">Dimanche</option>
+      <option value="lundi" <?php if (htmlspecialchars($_GET["dayt"])=="lundi") echo "selected='selected'"; ?>>Lundi</option>
+      <option value="mardi" <?php if (htmlspecialchars($_GET["dayt"])=="mardi") echo "selected='selected'"; ?>>Mardi</option>
+      <option value="mercredi" <?php if (htmlspecialchars($_GET["dayt"])=="mercredi") echo "selected='selected'"; ?>>Mercredi</option>
+      <option value="jeudi" <?php if (htmlspecialchars($_GET["dayt"])=="jeudi") echo "selected='selected'"; ?>>Jeudi</option>
+      <option value="vendredi" <?php if (htmlspecialchars($_GET["dayt"])=="vendredi") echo "selected='selected'"; ?>>Vendredi</option>
+      <option value="samedi" <?php if (htmlspecialchars($_GET["dayt"])=="samedi") echo "selected='selected'"; ?>>Samedi</option>
+      <option value="dimanche" <?php if (htmlspecialchars($_GET["dayt"])=="dimanche") echo "selected='selected'"; ?>>Dimanche</option>
     </select>
     <br>
     Nom d'offre:<br>
