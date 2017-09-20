@@ -20,13 +20,13 @@
     <br>
     Nom de jour d'arriver:<br>
     <select name="dayn">
-      <option value="lundi" <?php if (htmlspecialchars($_GET["dayn"])=="lundi" echo "selected='selected'"); ?>>Lundi</option>
-      <option value="mardi" <?php if (htmlspecialchars($_GET["dayn"])=="mardi" echo "selected='selected'"); ?>>Mardi</option>
-      <option value="mercredi" <?php if (htmlspecialchars($_GET["dayn"])=="mercredi" echo "selected='selected'"); ?>>Mercredi</option>
-      <option value="jeudi" <?php if (htmlspecialchars($_GET["dayn"])=="jeudi" echo "selected='selected'"); ?>>Jeudi</option>
-      <option value="vendredi" <?php if (htmlspecialchars($_GET["dayn"])=="vendredi" echo "selected='selected'"); ?>>Vendredi</option>
-      <option value="samedi" <?php if (htmlspecialchars($_GET["dayn"])=="samedi" echo "selected='selected'"); ?>>Samedi</option>
-      <option value="dimanche" <?php if (htmlspecialchars($_GET["dayn"])=="dimanche" echo "selected='selected'"); ?>>Dimanche</option>
+      <option value="lundi" <?php if (htmlspecialchars($_GET["dayn"])=="lundi") echo "selected='selected'"; ?>>Lundi</option>
+      <option value="mardi" <?php if (htmlspecialchars($_GET["dayn"])=="mardi") echo "selected='selected'"; ?>>Mardi</option>
+      <option value="mercredi" <?php if (htmlspecialchars($_GET["dayn"])=="mercredi") echo "selected='selected'"; ?>>Mercredi</option>
+      <option value="jeudi" <?php if (htmlspecialchars($_GET["dayn"])=="jeudi" echo) "selected='selected'"; ?>>Jeudi</option>
+      <option value="vendredi" <?php if (htmlspecialchars($_GET["dayn"])=="vendredi") echo "selected='selected'"; ?>>Vendredi</option>
+      <option value="samedi" <?php if (htmlspecialchars($_GET["dayn"])=="samedi") echo "selected='selected'"; ?>>Samedi</option>
+      <option value="dimanche" <?php if (htmlspecialchars($_GET["dayn"])=="dimanche") echo "selected='selected'"; ?>>Dimanche</option>
     </select>
     <br>
     Nom de jour de depart:<br>
