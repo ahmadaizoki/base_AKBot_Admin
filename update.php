@@ -8,7 +8,7 @@
   <br>
 </header>
 <body>
-  <form method="get" action="/">
+  <form method="post">
     Nombre de jours:<br>
     <input type="text" name="nbdays" value="<?php echo htmlspecialchars($_GET["nbdays"])?>">
     <br>
