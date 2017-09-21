@@ -9,7 +9,7 @@ body{
 }
 table{
   text-align: center;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   background-color: white;
-  border: 6;
 }

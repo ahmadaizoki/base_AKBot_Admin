@@ -6,6 +6,7 @@
   <h1> <?php echo 'Offre' . htmlspecialchars($_GET["id"]) . "!"; ?> </h1>
   <br>
   <br>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </header>
 <body>
   <form method="post">
