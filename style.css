@@ -2,6 +2,7 @@ form{
   text-align: center;
   font-weight: bold;
   font-family: serif;
+  font-style: oblique;
 }
 h1{
   text-align: center;
@@ -20,5 +21,8 @@ table{
   font-weight: bold;
 }
 select{
+  font-weight: bold;
+}
+input{
   font-weight: bold;
 }
