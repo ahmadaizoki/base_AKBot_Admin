@@ -1,6 +1,7 @@
 form{
   text-align: center;
   font-weight: bold;
+  font-family: serif;
 }
 h1{
   text-align: center;
@@ -16,5 +17,8 @@ table{
   background-color: white;
   font-style: oblique;
   font-family: cursive;
+  font-weight: bold;
+}
+select{
   font-weight: bold;
 }
