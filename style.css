@@ -9,5 +9,7 @@ body{
 }
 table{
   text-align: center;
-  align-self: center;
+  align-items: center;
+  background-color: white;
+  border: 6;
 }
