@@ -57,6 +57,7 @@
     <br>
     <input type="submit" name="update" value="Update">
   </form>
+  <form>
   <?php
     $pdoString = "pgsql:host=ec2-54-75-224-100.eu-west-1.compute.amazonaws.com dbname=deoaedt1t45duq user=ufmqwqytarffyx password=96a05ed81622bac458a19cff32a97e37fb2ae74bfb2a1e3f3b484fdf30735b82";
     $pdo = new PDO($pdoString);
@@ -126,6 +127,7 @@
     }
     echo $display;
   ?>
+</form>
   <?php
   if (isset($_POST['update'])){
   $db=pg_connect("host=ec2-54-75-224-100.eu-west-1.compute.amazonaws.com port=5432 dbname=deoaedt1t45duq user=ufmqwqytarffyx password=96a05ed81622bac458a19cff32a97e37fb2ae74bfb2a1e3f3b484fdf30735b82");
