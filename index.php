@@ -6,6 +6,7 @@
   <h1>Base Admin</h1>
   <br>
   <br>
+  <link rel="stylesheet" type="text/css" href="style.css"
 </header>
 <body>
   <form method="post" action="index.php">
